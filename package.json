@@ -1,0 +1,23 @@
+{
+  "name": "root_dm_protesis_dentales_duclo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sduclo/root_dm_protesis_dentales_duclo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sduclo/root_dm_protesis_dentales_duclo/issues"
+  },
+  "homepage": "https://github.com/sduclo/root_dm_protesis_dentales_duclo#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
