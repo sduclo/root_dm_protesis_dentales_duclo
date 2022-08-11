@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box; }
 
-/*---------------------GLOBALES-----------------------*/
 /************************HEADER************/
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/istockphoto-950434234-612x612.jpg) center/cover no-repeat; }
@@ -123,6 +122,74 @@ footer {
   line-height: 1.6;
   text-align: justify; }
 
+/********************************CONTACTO*************************/
+.contacto_h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px; }
+
+.contacto input:focus {
+  background-color: #bff7c5;
+  transition: all 2s; }
+
+.check_box:focus {
+  background-color: #2f302f;
+  transition: all 1s; }
+
+.contacto button:hover {
+  transform: translate(5px, 5px);
+  background-color: yellow;
+  color: black;
+  font-weight: bold; }
+
+.contacto h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px; }
+
+.contacto p {
+  text-align: center;
+  font-weight: bold; }
+
+/*********************************NOSOTROS*************************/
+.div_nos p {
+  line-height: 1.6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  margin-top: 15px; }
+
+.div_nos h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.div_nos h2:hover {
+  transform: rotate(5deg);
+  color: green; }
+
+/*--------------------------------SERVICIOS-----------------*/
+.servcios_generales a:hover {
+  transform: translate(5px, 5px);
+  background-color: yellow;
+  color: black;
+  font-weight: bold; }
+
+/*------------------------------GALERIA----------------------*/
+.imagenes h3 {
+  text-align: center;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.imagenes p {
+  line-height: 1.6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  margin-top: 10px; }
+
+/***************************INDEX*****************************/
 @media only screen and (max-width: 600px) {
   .index {
     display: grid;
@@ -187,36 +254,7 @@ footer {
         transform: translate(10px, 10px);
         border: solid black; } }
 
-/*-*******************************CONTACTO************************-*/
-.contacto_h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 15px; }
-
-.contacto input:focus {
-  background-color: #bff7c5;
-  transition: all 2s; }
-
-.check_box:focus {
-  background-color: #2f302f;
-  transition: all 1s; }
-
-.contacto button:hover {
-  transform: translate(5px, 5px);
-  background-color: yellow;
-  color: black;
-  font-weight: bold; }
-
-.contacto h3 {
-  text-align: center;
-  font-weight: bold;
-  margin-top: 10px; }
-
-.contacto p {
-  text-align: center;
-  font-weight: bold; }
-
+/********************************CONTACTO*************************/
 @media only screen and (max-width: 600px) {
   .main_contacto {
     height: 1600px; }
@@ -253,24 +291,7 @@ footer {
     .main_contacto .mapa {
       grid-area: 4; } }
 
-/*-********************************NOSOTROS************************-*/
-.div_nos p {
-  line-height: 1.6;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: justify;
-  margin-top: 15px; }
-
-.div_nos h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
-.div_nos h2:hover {
-  transform: rotate(5deg);
-  color: green; }
-
+/*********************************NOSOTROS*************************/
 @media only screen and (max-width: 600px) {
   .div_nos {
     display: grid;
@@ -328,13 +349,7 @@ footer {
       grid-area: a5;
       width: 40%; } }
 
-/*--------------------------------SERVICIOS.HTML-----------------*/
-.servcios_generales a:hover {
-  transform: translate(5px, 5px);
-  background-color: yellow;
-  color: black;
-  font-weight: bold; }
-
+/*--------------------------------SERVICIOS-----------------*/
 @media only screen and (max-width: 600px) {
   .servcios_generales {
     height: 2200px;
@@ -383,18 +398,7 @@ footer {
     .servcios_generales .servicios_6 {
       grid-area: f; } }
 
-/*------------------------------GALERIA.HTML----------------------*/
-.imagenes h3 {
-  text-align: center;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
-.imagenes p {
-  line-height: 1.6;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: justify;
-  margin-top: 10px; }
-
+/*------------------------------GALERIA----------------------*/
 @media only screen and (max-width: 600px) {
   .imagenes {
     width: 95%;
