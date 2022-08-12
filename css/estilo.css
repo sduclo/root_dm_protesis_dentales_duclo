@@ -113,14 +113,16 @@ footer {
 .index h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 10px;
   font-weight: bold; }
 
 .index p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.6;
-  text-align: justify; }
+  margin-left: 10px;
+  text-align: justify;
+  width: 95%; }
 
 /********************************CONTACTO*************************/
 .contacto_h2 {
@@ -194,25 +196,25 @@ footer {
   .index {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 27% 20% 25% 25%;
+    grid-template-rows: 32% 15% 25% 25%;
     grid-template-areas: "1" "2" "3" "4";
     row-gap: 10px;
-    height: 1190px;
+    height: 1300px;
     justify-items: center; }
     .index .index h2 {
       grid-area: 1;
       font-size: 18px; }
+    .index .index p {
+      grid-area: 1;
+      font-size: 15px;
+      margin: 5px 30px 10px 10px;
+      width: 90%; }
     .index .index iframe {
       grid-area: 2; }
     .index .index_img1 {
       grid-area: 3; }
     .index .index_img2 {
       grid-area: 4; }
-    .index .index p {
-      grid-area: 1;
-      font-size: 15px;
-      margin: 5px 30px 10px 10px;
-      width: 90%; }
     .index .index img {
       width: 85%;
       object-fit: contain;
@@ -225,19 +227,18 @@ footer {
 @media only screen and (min-width: 600px) {
   .index {
     display: grid;
-    height: 670px;
-    grid-template-columns: 49% 50%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     grid-template-areas: "1 2" "3 4";
     align-items: center;
-    justify-items: center; }
+    justify-items: center;
+    height: 870px; }
     .index .index h2 {
       grid-area: 1;
       font-size: 28px; }
     .index .index p {
       grid-area: 1;
-      font-size: 15px;
-      margin: 30px 20px 10px 20px; }
+      font-size: 30px; }
     .index .index iframe {
       grid-area: 2; }
     .index .index_img1 {
@@ -245,10 +246,9 @@ footer {
     .index .index_img2 {
       grid-area: 4; }
     .index .index img {
-      width: 65%;
       object-fit: contain;
       align-content: center;
-      margin-left: 80px;
+      margin-left: 70px;
       box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.48); }
       .index .index img .index img:hover {
         transform: translate(10px, 10px);
