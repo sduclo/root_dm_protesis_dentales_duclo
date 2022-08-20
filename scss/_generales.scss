@@ -171,30 +171,42 @@ footer {
 }
 
 /***************************INDEX*****************************/
-.index h2 {
+.index {
+    h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 10px;
-    font-weight: bold;
+    font-weight: bold;}
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 1.6;
+        margin-left: 10px;
+        text-align: justify;
+        width: 95%;}
+    img{
+         width: 85%;}
+    
 
-}
-
-.index p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1.6;
-    margin-left: 10px;
-    text-align: justify;
-    width: 95%;
-}
+    }
+   
 
 /********************************CONTACTO*************************/
-.contacto_h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 15px;
-}
+
+    .contacto_h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 15px;
+        p{
+            text-align: center;
+        }
+    }
+    
+     input:focus {
+        background-color: rgb(191, 247, 197);
+        transition: all 1s;
+    }
 .tit{
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -215,10 +227,7 @@ footer {
     color: blue;
 }
 
-.contacto input:focus {
-    background-color: rgb(191, 247, 197);
-    transition: all 1s;
-}
+
 
 .check_box:focus {
     background-color: rgb(47, 48, 47);
@@ -295,7 +304,7 @@ footer {
     height: 20px;
     border: 1px solid #c8ccd4;
     border-radius: 3px;
-    vertical-align: middle;
+    
     transition: background 0.1s ease;
     cursor: pointer;
     display: block;

@@ -124,12 +124,21 @@ footer {
   text-align: justify;
   width: 95%; }
 
+.index img {
+  width: 85%; }
+
 /********************************CONTACTO*************************/
 .contacto_h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   font-weight: bold;
   margin-top: 15px; }
+  .contacto_h2 p {
+    text-align: center; }
+
+input:focus {
+  background-color: #bff7c5;
+  transition: all 1s; }
 
 .tit, .tit--clientes, .tit--empresas, .tit--proveedores {
   font-size: 25px;
@@ -146,10 +155,6 @@ footer {
 
 .tit--proveedores {
   color: blue; }
-
-.contacto input:focus {
-  background-color: #bff7c5;
-  transition: all 1s; }
 
 .check_box:focus {
   background-color: #2f302f;
@@ -215,7 +220,6 @@ button:active {
   height: 20px;
   border: 1px solid #c8ccd4;
   border-radius: 3px;
-  vertical-align: middle;
   transition: background 0.1s ease;
   cursor: pointer;
   display: block; }
@@ -417,10 +421,9 @@ button:hover::before {
   .index {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 32% 15% 25% 25%;
+    grid-template-rows: 35% 15% 25% 25%;
     grid-template-areas: "1" "2" "3" "4";
-    row-gap: 10px;
-    height: 1300px;
+    height: 1200px;
     justify-items: center; }
     .index .index h2 {
       grid-area: 1;
@@ -429,7 +432,7 @@ button:hover::before {
       grid-area: 1;
       font-size: 15px;
       margin: 5px 30px 10px 10px;
-      width: 90%; }
+      width: 85%; }
     .index .index iframe {
       grid-area: 2; }
     .index .index_img1 {
@@ -449,7 +452,7 @@ button:hover::before {
     grid-template-areas: "1 2" "3 4";
     align-items: center;
     justify-items: center;
-    height: 870px; }
+    height: 770px; }
     .index .index h2 {
       grid-area: 1;
       font-size: 28px; }
@@ -474,7 +477,7 @@ button:hover::before {
 /********************************CONTACTO*************************/
 @media only screen and (max-width: 600px) {
   .main_contacto {
-    height: 1600px; }
+    height: 1700px; }
     .main_contacto .contacto_h2 {
       font-size: 30px; }
     .main_contacto .contacto p {
@@ -483,40 +486,31 @@ button:hover::before {
     .main_contacto .contacto h3 {
       font-size: 20px; }
     .main_contacto .contacto iframe {
-      width: 95%;
-      margin-left: 8px; }
+      width: 98%;
+      margin-left: 5px; }
     .main_contacto .clientes {
-      width: 95%;
-      margin-left: 10px; }
+      width: 90%;
+      margin-left: 5px; }
     .main_contacto .empresas {
-      width: 95%;
-      margin-left: 10px; }
+      width: 90%;
+      margin-left: 5px; }
     .main_contacto .proveedores {
-      width: 95%;
-      margin-left: 10px; } }
+      width: 90%;
+      margin-left: 5px; } }
 
 @media only screen and (min-width: 600px) {
-  .main_contacto {
-    height: 1850px; }
-    .main_contacto .contacto_h2 {
-      font-size: 25px; }
-    .main_contacto .contacto {
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: 40% 25% 25% 28%;
-      grid-template-areas: "1" "2" "3" "4";
-      justify-items: center;
-      align-items: center; }
-      .main_contacto .contacto .contacto p {
-        font-size: 25px; }
-        .main_contacto .contacto .contacto p .clientes {
-          grid-area: 1; }
-        .main_contacto .contacto .contacto p .empresas {
-          grid-area: 2; }
-        .main_contacto .contacto .contacto p .proveedores {
-          grid-area: 3; }
-    .main_contacto .mapa {
-      grid-area: 4; } }
+  .contacto iframe {
+    width: 65%;
+    margin-left: 150px; }
+  .clientes {
+    width: 70%;
+    margin-left: 200px; }
+  .empresas {
+    width: 70%;
+    margin-left: 150px; }
+  .proveedores {
+    width: 70%;
+    margin-left: 150px; } }
 
 /*********************************NOSOTROS*************************/
 @media only screen and (max-width: 600px) {
