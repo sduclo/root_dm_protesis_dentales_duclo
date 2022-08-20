@@ -13,12 +13,9 @@
         row-gap: 10px;
         height: 1300px;
         justify-items: center;
-       
-
         .index h2 {
             grid-area: 1;
             font-size: 18px;
-
         }
         .index p {
             grid-area: 1;
@@ -26,79 +23,61 @@
             margin: 5px 30px 10px 10px;
             width: 90%;
         }
-
         .index iframe {
             grid-area: 2;
         }
-
         .index_img1 {
             grid-area: 3;
         }
-
         .index_img2 {
             grid-area: 4;
         }
-
         .index img {
-            width: 85%;
             object-fit: contain;
             margin-left: 20px;
             box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.48);
         }
-
-        .index img:hover {
-            transform: translate(5px, 5px);
-            border: solid black;
-        }
+    
     }
 }
-
 @media only screen and (min-width:600px) {
     .index {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
         grid-template-areas: "1 2"
-            "3 4";
+                             "3 4";
         align-items: center;
         justify-items: center;
         height: 870px;
-
         .index h2 {
             grid-area: 1;
             font-size: 28px;
         }
-
         .index p {
             grid-area: 1;
             font-size: 30px;
         }
-
         .index iframe {
             grid-area: 2;
-
         }
-
         .index_img1 {
             grid-area: 3;
-            
         }
-
         .index_img2 {
             grid-area: 4;
         }
-
         .index img {
             object-fit: contain;
             align-content: center;
             margin-left: 70px;
             box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.48);
-
-            .index img:hover {
-                transform: translate(10px, 10px);
-                border: solid black;
-            }
         }
+       
+    }
+    .index img:hover {
+        transform: translate(10px, 10px);
+        border: solid black;
     }
 }
 /********************************CONTACTO*************************/
@@ -106,22 +85,31 @@
 @media only screen and (max-width:600px) {
     .main_contacto {
         height: 1600px;
-
         .contacto_h2 {
             font-size: 30px;
         }
-
         .contacto p {
             font-size: 15px;
             margin-top: 20px;
         }
-
         .contacto h3 {
             font-size: 20px;
         }
-
         .contacto iframe {
-            width: 98%;
+            width: 95%;
+            margin-left: 8px;
+        }
+        .clientes{
+            width: 95%;
+            margin-left: 10px;
+        }
+        .empresas{
+            width: 95%;
+            margin-left: 10px;
+        }
+        .proveedores{
+            width: 95%;
+            margin-left: 10px;
         }
     }
 
@@ -129,16 +117,14 @@
 
 @media only screen and (min-width:600px) {
     .main_contacto {
-        height: 1800px;
-
+        height: 1850px;
         .contacto_h2 {
             font-size: 25px;
         }
-
         .contacto {
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows: 35% 25% 25% 28%;
+            grid-template-rows: 40% 25% 25% 28%;
             grid-template-areas:
                 "1"
                 "2"
@@ -146,29 +132,25 @@
                 "4";
             justify-items: center;
             align-items: center;
-
             .contacto p {
                 font-size: 25px;
-
                 .clientes {
                     grid-area: 1;
+                    
                 }
-
                 .empresas {
                     grid-area: 2;
+                    
                 }
-
                 .proveedores {
                     grid-area: 3;
                 }
             }
         }
-
         .mapa {
             grid-area: 4;
         }
     }
-
 }
 
 /*********************************NOSOTROS*************************/
@@ -185,42 +167,34 @@
             "5";
         height: 2100px;
         justify-items: center;
-
         .div_nos p {
             font-size: 16px;
             margin-left: 10px;
         }
-
         .div_nos h2 {
             font-size: 20px;
         }
-
         .nosotros {
             grid-area: 1;
-            width: 95%;
+            width: 90%;
         }
-
         .mision {
             grid-area: 2;
-            width: 95%;
+            width: 90%;
         }
-
         .vision {
             grid-area: 3;
             width: 90%;
         }
-
         .consul {
             grid-area: 4;
-            width: 95%;
+            width: 90%;
         }
-
         .carrusel {
             grid-area: 5;
-            width: 95%;
+            width: 90%;
         }
     }
-
 }
 
 @media only screen and (min-width:600px) {
@@ -234,38 +208,25 @@
             "a5 a5";
         height: 1300px;
         justify-items: center;
-
-        .div_nos p {
-            font-size: 16px;
-        }
-
-        .div_nos h2 {
-            font-size: 25px;
-        }
-
         .nosotros {
             grid-area: a1;
             width: 95%;
         }
-
         .mision {
             grid-area: a2;
             width: 95%;
         }
-
         .vision {
             grid-area: a3;
             width: 90%;
         }
-
         .consul {
             grid-area: a4;
             width: 95%;
         }
-
         .carrusel {
             grid-area: a5;
-            width: 40%;
+            width: 35%;
         }
     }
 }
@@ -275,12 +236,10 @@
     .servcios_generales {
         height: 2200px;
         margin-left: 50px;
-
         .servcios_generales p {
             font-size: 18px;
             text-align: justify;
         }
-
         .servcios_generales h5 {
             text-align: center;
             color: blue;
@@ -288,12 +247,10 @@
             font-size: 25px;
         }
     }
-
     .main_h2 {
         text-align: center;
         font-weight: bold;
     }
-
 }
 
 @media only screen and (min-width:600px) {
@@ -304,9 +261,9 @@
         font-family: Georgia, 'Times New Roman', Times, serif;
         text-align: center;
         font-weight: bold;
+       
 
     }
-
     .servcios_generales {
         display: grid;
         grid-template-columns: 49% 49%;
@@ -315,7 +272,7 @@
             "c d"
             "e f";
         justify-items: center;
-        height: 1100px;
+        height: 1200px;
 
         .servcios_generales h5 {
             text-align: center;

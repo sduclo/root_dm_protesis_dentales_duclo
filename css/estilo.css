@@ -131,37 +131,228 @@ footer {
   font-weight: bold;
   margin-top: 15px; }
 
+.tit, .tit--clientes, .tit--empresas, .tit--proveedores {
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px; }
+
+.tit--clientes {
+  color: green; }
+
+.tit--empresas {
+  color: #e446bf; }
+
+.tit--proveedores {
+  color: blue; }
+
 .contacto input:focus {
   background-color: #bff7c5;
-  transition: all 2s; }
+  transition: all 1s; }
 
 .check_box:focus {
   background-color: #2f302f;
   transition: all 1s; }
 
-.contacto button:hover {
-  transform: translate(5px, 5px);
-  background-color: yellow;
-  color: black;
+.p--form {
+  text-align: left; }
+
+.p--mapa {
+  text-align: center;
+  font-size: 20px;
   font-weight: bold; }
 
-.contacto h3 {
-  text-align: center;
-  font-weight: bold;
-  margin-top: 10px; }
+/* From uiverse.io by @adamgiebl */
+.bt--enviar {
+  margin-top: 12px;
+  font-family: inherit;
+  font-size: 13px;
+  background: #A370F0;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s; }
 
-.contacto p {
-  text-align: center;
-  font-weight: bold; }
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out; }
+
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out; }
+
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate; }
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1); }
+
+button:hover span {
+  transform: translateX(5em); }
+
+button:active {
+  transform: scale(0.95); }
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em); }
+  to {
+    transform: translateY(-0.1em); } }
+
+/* From uiverse.io */
+.cbx {
+  position: relative;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #c8ccd4;
+  border-radius: 3px;
+  vertical-align: middle;
+  transition: background 0.1s ease;
+  cursor: pointer;
+  display: block; }
+
+.cbx:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  width: 7px;
+  height: 14px;
+  opacity: 0;
+  transform: rotate(45deg) scale(0);
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transition: all 0.3s ease;
+  transition-delay: 0.15s; }
+
+.lbl {
+  margin-left: 5px;
+  vertical-align: middle;
+  cursor: pointer; }
+
+#cbx:checked ~ .cbx {
+  border-color: transparent;
+  background: #A370F0;
+  animation: jelly 0.6s ease; }
+
+#cbx:checked ~ .cbx:after {
+  opacity: 1;
+  transform: rotate(45deg) scale(1); }
+
+.cntr {
+  position: relative; }
+
+@keyframes jelly {
+  from {
+    transform: scale(1, 1); }
+  30% {
+    transform: scale(1.25, 0.75); }
+  40% {
+    transform: scale(0.75, 1.25); }
+  50% {
+    transform: scale(1.15, 0.85); }
+  65% {
+    transform: scale(0.95, 1.05); }
+  75% {
+    transform: scale(1.05, 0.95); }
+  to {
+    transform: scale(1, 1); } }
+
+.hidden-xs-up {
+  display: none !important; }
+
+/* From uiverse.io by @adamgiebl */
+.cssbuttons-io-button {
+  background: #A370F0;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em; }
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s; }
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em); }
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9; }
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em); }
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95); }
 
 /*********************************NOSOTROS*************************/
-.div_nos p {
+.p--nosotros {
+  font-size: 16px;
+  color: blue;
+  line-height: 1.6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  margin-top: 15px; }
+
+.p--mision {
+  font-size: 16px;
+  color: #f57288;
+  line-height: 1.6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  margin-top: 15px; }
+
+.p--vision {
+  font-size: 16px;
+  color: green;
+  line-height: 1.6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  margin-top: 15px; }
+
+.p--consultorios {
+  font-size: 16px;
+  color: black;
   line-height: 1.6;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: justify;
   margin-top: 15px; }
 
 .div_nos h2 {
+  font-size: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
@@ -173,11 +364,41 @@ footer {
   color: green; }
 
 /*--------------------------------SERVICIOS-----------------*/
-.servcios_generales a:hover {
-  transform: translate(5px, 5px);
-  background-color: yellow;
-  color: black;
-  font-weight: bold; }
+/* From uiverse.io by @alexroumi */
+button {
+  padding: 5px 5px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: white;
+  position: relative;
+  font-weight: 1000;
+  font-size: 16px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden; }
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: black;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms; }
+
+button:hover {
+  color: #e8e8e8; }
+
+button:hover::before {
+  width: 100%; }
 
 /*------------------------------GALERIA----------------------*/
 .imagenes h3 {
@@ -216,13 +437,9 @@ footer {
     .index .index_img2 {
       grid-area: 4; }
     .index .index img {
-      width: 85%;
       object-fit: contain;
       margin-left: 20px;
-      box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.48); }
-    .index .index img:hover {
-      transform: translate(5px, 5px);
-      border: solid black; } }
+      box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.48); } }
 
 @media only screen and (min-width: 600px) {
   .index {
@@ -250,9 +467,9 @@ footer {
       align-content: center;
       margin-left: 70px;
       box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.48); }
-      .index .index img .index img:hover {
-        transform: translate(10px, 10px);
-        border: solid black; } }
+  .index img:hover {
+    transform: translate(10px, 10px);
+    border: solid black; } }
 
 /********************************CONTACTO*************************/
 @media only screen and (max-width: 600px) {
@@ -266,17 +483,27 @@ footer {
     .main_contacto .contacto h3 {
       font-size: 20px; }
     .main_contacto .contacto iframe {
-      width: 98%; } }
+      width: 95%;
+      margin-left: 8px; }
+    .main_contacto .clientes {
+      width: 95%;
+      margin-left: 10px; }
+    .main_contacto .empresas {
+      width: 95%;
+      margin-left: 10px; }
+    .main_contacto .proveedores {
+      width: 95%;
+      margin-left: 10px; } }
 
 @media only screen and (min-width: 600px) {
   .main_contacto {
-    height: 1800px; }
+    height: 1850px; }
     .main_contacto .contacto_h2 {
       font-size: 25px; }
     .main_contacto .contacto {
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 35% 25% 25% 28%;
+      grid-template-rows: 40% 25% 25% 28%;
       grid-template-areas: "1" "2" "3" "4";
       justify-items: center;
       align-items: center; }
@@ -307,19 +534,19 @@ footer {
       font-size: 20px; }
     .div_nos .nosotros {
       grid-area: 1;
-      width: 95%; }
+      width: 90%; }
     .div_nos .mision {
       grid-area: 2;
-      width: 95%; }
+      width: 90%; }
     .div_nos .vision {
       grid-area: 3;
       width: 90%; }
     .div_nos .consul {
       grid-area: 4;
-      width: 95%; }
+      width: 90%; }
     .div_nos .carrusel {
       grid-area: 5;
-      width: 95%; } }
+      width: 90%; } }
 
 @media only screen and (min-width: 600px) {
   .div_nos {
@@ -329,10 +556,6 @@ footer {
     grid-template-areas: "a1 a1" "a2 a3" "a4 a4" "a5 a5";
     height: 1300px;
     justify-items: center; }
-    .div_nos .div_nos p {
-      font-size: 16px; }
-    .div_nos .div_nos h2 {
-      font-size: 25px; }
     .div_nos .nosotros {
       grid-area: a1;
       width: 95%; }
@@ -347,7 +570,7 @@ footer {
       width: 95%; }
     .div_nos .carrusel {
       grid-area: a5;
-      width: 40%; } }
+      width: 35%; } }
 
 /*--------------------------------SERVICIOS-----------------*/
 @media only screen and (max-width: 600px) {
@@ -380,7 +603,7 @@ footer {
     grid-template-rows: 35% 33% 32% 32% 30% 30%;
     grid-template-areas: "a b" "c d" "e f";
     justify-items: center;
-    height: 1100px; }
+    height: 1200px; }
     .servcios_generales .servcios_generales h5 {
       text-align: center;
       color: blue;
