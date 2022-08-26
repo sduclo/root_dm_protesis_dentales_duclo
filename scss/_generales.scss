@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+main{
+    background:linear-gradient(rgb(242, 239, 239), rgb(250, 245, 245));
+
+}
 /************************HEADER************/
 
 header {
@@ -132,11 +136,10 @@ header {
 /**************************FOOTER*******************************/
 
 footer {
-    background-color: rgb(8, 8, 8);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/istockphoto-950434234-612x612.jpg) center/cover no-repeat;
     border-top: 8px double rgb(9, 9, 159);
     color: white;
     text-align: center;
-
     .footer p:hover {
         color: yellow;
     }
@@ -176,18 +179,19 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: px;
     font-weight: bold;}
     p {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
         line-height: 1.6;
         margin-left: 10px;
         text-align: justify;
         width: 95%;}
     img{
-         width: 85%;}
-    
-
+        margin-left: 50px;
+         box-shadow: 0px 10px 5px 5px rgba(0, 0, 0, 0.48);
+         width: 70%;}
     }
    
 
@@ -197,7 +201,6 @@ footer {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-align: center;
         font-weight: bold;
-        margin-top: 15px;
         p{
             text-align: center;
         }
@@ -226,8 +229,6 @@ footer {
     @extend .tit;
     color: blue;
 }
-
-
 
 .check_box:focus {
     background-color: rgb(47, 48, 47);
@@ -432,9 +433,6 @@ footer {
    .cssbuttons-io-button:active .icon {
     transform: scale(0.95);
    }
-   
-   
-   
 
 /*********************************NOSOTROS*************************/
 @mixin estilo_texto ( $color_letra ){
@@ -450,7 +448,7 @@ footer {
 
 }
  .p--mision{
-    @include estilo_texto(rgb(245, 114, 136)) 
+    @include estilo_texto(rgb(227, 15, 50)) 
     
 }
 .p--vision{
@@ -467,9 +465,7 @@ footer {
     text-align: center;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
-
 .div_nos h2:hover {
     transform: rotate(5deg);
     color: green;
@@ -514,8 +510,50 @@ button {
    button:hover::before {
     width: 100%;
    }
-
-
+   .servicios_1 {
+    grid-area: a;
+    border: double green;
+    border-style:outset;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.48);
+   margin: 5px 0px;
+}
+.servicios_2 {
+    border: double green;
+    border-style:outset;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.48);
+   margin: 5px 0px;
+}
+.servicios_3 {
+    border: double green;
+    border-style:outset;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.48);
+   margin: 5px 0px;
+}
+.servicios_4 {
+    border: double green;
+    border-style:outset;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.48);
+   margin: 5px 0px;
+}
+.servicios_5 {
+    border: double green;
+    border-style:outset;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.48);
+   margin: 5px 0px;
+}
+.servicios_6 {
+    border: double green;
+    border-style:outset;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.48);
+   margin: 5px 0px;
+}
+.card-text{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(11, 11, 98);
+    font-family:fantasy;
+} 
+   
 /*------------------------------GALERIA----------------------*/
 .imagenes h3 {
     text-align: center;
