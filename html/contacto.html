@@ -13,6 +13,8 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
@@ -25,8 +27,8 @@
                 </a>
             </div>
             <div class="titulo_nav">
-                <h1>DM PROTESIS DENTALES</h1>
-                <p>Somos especialistas en Protesis e Implantes Dentales</p>
+              <h1 class="animate__animated animate__fadeIn">DM PROTESIS DENTALES</h1>
+              <p class="animate__animated animate__zoomInUp">Somos especialistas en Protesis e Implantes Dentales</p>
             </div>  
             <div class="navegador">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -130,7 +132,7 @@
       
       <div class="mapa">
         <p class="p--mapa">Visitanos en: Av. Siempre Viva 1234</p>
-        <iframe
+        <iframe data-aos="zoom-in"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425.58061946832214!2d-64.1867040071869!3d-31.423906787349193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28f63cf2077%3A0xca71e10e4641086b!2sPaseo%20del%20Buen%20Pastor!5e0!3m2!1ses!2sar!4v1657826106462!5m2!1ses!2sar"
           width="650" height="350" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -169,6 +171,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

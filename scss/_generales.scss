@@ -43,94 +43,6 @@ header {
         color: yellow;
     }
 
-    @media only screen and (max-width:600px) {
-        .header {
-            display: grid;
-            grid-template-columns: 30% 70%;
-            grid-template-rows: 40% 12%;
-            grid-template-areas: "1 2"
-                "3 2";
-            border-bottom: 5px double rgb(15, 15, 124);
-            justify-content: center;
-            height: 200px;
-        }
-
-        .img_nav {
-            grid-area: 1;
-        }
-
-        .img_nav:hover {
-            transform: translate(3px, 3px);
-            border: solid yellow;
-        }
-
-        .titulo_nav h1 {
-            grid-area: 2;
-            font-size: 30px;
-        }
-
-        .titulo_nav p {
-            grid-area: 2;
-            font-size: 20px;
-        }
-
-        .navegador {
-            grid-area: 3;
-            width: 70%;
-        }
-
-        .navegador a {
-            color: whitesmoke;
-            font-size: 15px;
-            justify-items: center;
-        }
-    }
-
-    @media only screen and (min-width:600px) {
-        .header {
-            display: grid;
-            grid-template-columns: 20% 80%;
-            grid-auto-rows: 60% 10%;
-            grid-template-areas: "1 2"
-                "3 3";
-            border-bottom: 5px double rgb(15, 15, 124);
-            justify-content: center;
-            height: 350px;
-        }
-
-        .img_nav {
-            grid-area: 1;
-            transform: translate(5px, 5px);
-            color: yellow;
-        }
-
-        .img_nav:hover {
-            transform: translate(3px, 3px);
-            border: solid yellow;
-        }
-
-        .titulo_nav h1 {
-            grid-area: 2;
-            font-size: 60px;
-        }
-
-        .titulo_nav p {
-            grid-area: 2;
-            font-size: 35px;
-            margin-top: 50px;
-        }
-
-        .navegador {
-            grid-area: 3;
-            width: 80%;
-        }
-
-        .navegador a {
-            color: whitesmoke;
-            font-size: 25px;
-            justify-items: center;
-        }
-    }
 }
 
 /**************************FOOTER*******************************/
@@ -165,10 +77,6 @@ footer {
 
         .footer p {
             font-size: 12px;
-        }
-
-        .footer p:hover {
-            transform: rotate(5deg);
         }
     }
 }
@@ -466,10 +374,7 @@ footer {
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.div_nos h2:hover {
-    transform: rotate(5deg);
-    color: green;
-}
+
 /*--------------------------------SERVICIOS-----------------*/
 /* From uiverse.io by @alexroumi */
 button {

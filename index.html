@@ -14,21 +14,24 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
     <header>
-        <section class="header">
+        <div class="header">
             <div>
                 <a href="index.html">
                     <img class="img_nav" src="img/linkheader2.jpg" alt="Muela">
                 </a>
             </div>
             <div class="titulo_nav">
-                <h1>DM PROTESIS DENTALES</h1>
-                <p>Somos especialistas en Protesis e Implantes Dentales</p>
+                <h1 class="animate__animated animate__fadeIn">DM PROTESIS DENTALES</h1>
+                <p class="animate__animated animate__zoomInUp">Somos especialistas en Protesis e Implantes Dentales</p>
             </div>
+
             <div class="navegador">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <div class="container-fluid">
@@ -50,13 +53,14 @@
                     </div>
                 </nav>
             </div>
-        </section>
+        </div>
     </header>
     <main>
         <div class="index">
             <div>
-                <h2>Importancia de los Implantes Dentales</h2>
-                <p class="parrafo_uno">Independiente a las causas, cuando una persona pierde un diente, ésta se ve privada de las cualidades
+                <h2 class="animate__animated animate__flash">Importancia de los Implantes Dentales</h2>
+                <p class="parrafo_uno">Independiente a las causas, cuando una persona pierde un diente, ésta se ve
+                    privada de las cualidades
                     funcionales y estéticas de esa pieza dental.
                     Por tal motivo los especialistas utilizan diferentes métodos que ayuden a suplir tales aspectos,
                     recomendando la implementación de prótesis o implantes dentales. Ahora bien, no es un secreto para
@@ -83,8 +87,9 @@
                     allowfullscreen></iframe>
             </div>
             <div>
-                <img class="img-thumbnail" class="img-fluid" class="index_img1" src="img/index1.jpg" alt="Sonrisas">
-                <p class="parrafo_dos">En lo estetico, los implantes dentales ofrecen un aspecto natural a la sonrisa, mimetizándose entre las demás piezas
+                <img data-aos="flip-left" class="img-thumbnail" class="img-fluid" class="index_img1" src="img/index1.jpg" alt="Sonrisas">
+                <p class="parrafo_dos">En lo estetico, los implantes dentales ofrecen un aspecto natural a la sonrisa,
+                    mimetizándose entre las demás piezas
                     dentales. La corona, o parte superior y visible del implante, tiende a ser diseñado especialmente
                     para el paciente, contando con el color y las medidas adecuadas para no generar discrepancia alguna.
                     Por otro lado, a diferencia de las prótesis, le permiten sonreír a la persona sin temor de
@@ -92,8 +97,10 @@
                     pasando naturalmente entre las encías como los demás dientes.</p>
             </div>
             <div>
-                <img class="img-thumbnail" class="img-fluid" class="index_img2" src="img/index3.jpg" alt="Niña en dentista">
-                <p class="parrafo_tres">En lo funcional, cuando un paciente recibe un implante dental, no sólo está recuperando la armonía en su sonrisa, sino
+                <img data-aos="flip-right" class="img-thumbnail" class="img-fluid" class="index_img2" src="img/index3.jpg"
+                    alt="Niña en dentista">
+                <p class="parrafo_tres">En lo funcional, cuando un paciente recibe un implante dental, no sólo está
+                    recuperando la armonía en su sonrisa, sino
                     también la capacidad de hacer uso completo de su boca sin limitaciones. Es decir, una vez los
                     implantes dentales se han fijado completamente (proceso de osteointegración), la persona puede
                     volver a comer tranquilamente. Puede masticar alimentos sólidos sin temor que el implante se
@@ -143,6 +150,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+        
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

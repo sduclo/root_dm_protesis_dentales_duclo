@@ -13,7 +13,9 @@
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
 <body>
@@ -25,8 +27,8 @@
         </a>
       </div>
       <div class="titulo_nav">
-        <h1>DM PROTESIS DENTALES</h1>
-        <p>Somos especialistas en Protesis e Implantes Dentales</p>
+        <h1 class="animate__animated animate__fadeIn">DM PROTESIS DENTALES</h1>
+        <p class="animate__animated animate__zoomInUp">Somos especialistas en Protesis e Implantes Dentales</p>
       </div>
       <div class="navegador">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -55,8 +57,9 @@
     <div class="imagenes">
 
       <div class="implantes">
-        <h3 >Implantes</h3>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <h3>Implantes</h3>
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1700" id="carouselExampleFade"
+          class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="../img/img_galeria/implantes1.jpg" class="d-block w-100" alt="implantes">
@@ -87,7 +90,8 @@
 
       <div class="protesis">
         <h3>Prótesis</h3>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1700" id="carouselExampleFade"
+          class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="../img/img_galeria/protesis1.jpg" class="d-block w-100" alt="protesis">
@@ -117,7 +121,8 @@
 
       <div class="estetica">
         <h3>Estética</h3>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div data-aos="fade-up-right" id="carouselExampleFade"
+          class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="../img/img_galeria/estetica1.jpg" class="d-block w-100" alt="estetica">
@@ -147,7 +152,7 @@
 
       <div class="ortodoncia">
         <h3>Ortodoncia</h3>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div data-aos="fade-up-left" id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="../img/img_galeria/ortodoncia1.jpg" class="d-block w-100" alt="ortodoncia">
@@ -177,7 +182,7 @@
 
       <div class="endodoncia">
         <h3>Endodoncia</h3>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div data-aos="flip-up" id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="../img/img_galeria/endodoncia1.jpg" class="d-block w-100" alt="endodoncia">
@@ -207,7 +212,7 @@
 
       <div class="odontopediatria">
         <h3>Odontopediatria</h3>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div data-aos="flip-up" id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="../img/img_galeria/odontopediatria1.jpg" class="d-block w-100" alt="odontopediatria">
@@ -281,6 +286,10 @@
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>

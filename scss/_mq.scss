@@ -1,3 +1,94 @@
+/***************************HEADER*****************************/
+@media only screen and (max-width:600px) {
+    .header {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 40% 12%;
+        grid-template-areas: "1 2"
+                             "3 2";
+        border-bottom: 5px double rgb(15, 15, 124);
+        justify-content: center;
+        height: 200px;
+    }
+
+    .img_nav {
+        grid-area: 1;
+    }
+
+   .img_nav:hover {
+        transform: translate(3px, 3px);
+        border: solid yellow;
+    }
+
+    .titulo_nav h1 {
+        grid-area: 2;
+        font-size: 30px;
+    }
+
+    .titulo_nav p {
+        grid-area: 2;
+        font-size: 20px;
+    }
+
+    .navegador {
+        grid-area: 3;
+        width: 70%;
+    }
+
+    .navegador a {
+        color: whitesmoke;
+        font-size: 15px;
+        justify-items: center;
+    }
+}
+@media only screen and (min-width:600px) {
+    .header {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "1 2"
+                             "3 3";
+        border-bottom: 5px double rgb(15, 15, 124);
+        justify-content: center;
+        height: 450px;
+    }
+
+    .img_nav {
+        grid-area: 1;
+        
+        transform: translate(5px, 5px);
+        color: yellow;
+    }
+    
+    .img_nav:hover {
+        transform: translate(3px, 3px);
+        border: solid yellow;
+    }
+
+    .titulo_nav h1 {
+        grid-area: 2;
+        font-size: 60px;
+    }
+
+    .titulo_nav p {
+        grid-area: 2;
+        font-size: 35px;
+        margin-top: 50px;
+    }
+
+    .navegador {
+        grid-area: 3;
+        width: 80%;
+    }
+
+    .navegador a {
+        color: whitesmoke;
+        font-size: 25px;
+        justify-items: center;
+    }
+}
+
+
 
 /***************************INDEX*****************************/
 
@@ -12,111 +103,148 @@
             "4";
         min-height: 2400px;
         justify-items: center;
+
         .index h2 {
             grid-area: 1;
             font-size: 18px;
         }
+
         .parrafo_uno {
             grid-area: 1;
-            font-size: 15px;}
+            font-size: 15px;
+        }
+
         .index iframe {
-            grid-area: 2;}
+            grid-area: 2;
+        }
+
         .index_img1 {
-            grid-area: 3;}
-        .parrafo_dos{ 
             grid-area: 3;
-            margin-top: 40px;}
+        }
+
+        .parrafo_dos {
+            grid-area: 3;
+            margin-top: 40px;
+        }
+
         .index_img2 {
-            grid-area: 4;}
-        .parrafo_tres{
             grid-area: 4;
-            margin-top: 40px;}
+        }
+
+        .parrafo_tres {
+            grid-area: 4;
+            margin-top: 40px;
+        }
     }
 }
+
 @media only screen and (min-width:600px) {
     .index {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 55% 45%;
         grid-template-areas: "1 2"
-                             "3 4";
+            "3 4";
         min-height: 1250px;
         align-items: center;
         justify-items: center;
-        
+
         .index h2 {
             grid-area: 1;
-            font-size: 28px;}
-                    
+            font-size: 28px;
+        }
+
         .parrafo_uno {
-            grid-area: 1;}
+            grid-area: 1;
+        }
 
         .index iframe {
-            grid-area: 2;}
+            grid-area: 2;
+        }
+
         .index_img1 {
             grid-area: 3;
-            margin-left: 90px;}
-        .parrafo_dos{
+            margin-left: 90px;
+        }
+
+        .parrafo_dos {
             grid-area: 3;
-            margin-top: 40px;}
+            margin-top: 40px;
+        }
+
         .index_img2 {
             grid-area: 4;
-            margin-left: 90px;}
-        .parrafo_tres{
+            margin-left: 90px;
+        }
+
+        .parrafo_tres {
             grid-area: 4;
-            margin-top: 40px;}
-    }   
+            margin-top: 40px;
+        }
+    }
 }
+
 /********************************CONTACTO*************************/
 
 @media only screen and (max-width:600px) {
     .main_contacto {
         height: 1700px;
+
         .contacto_h2 {
             font-size: 30px;
         }
+
         .contacto p {
             font-size: 15px;
             margin-top: 20px;
         }
+
         .contacto h3 {
             font-size: 20px;
         }
+
         .contacto iframe {
             width: 98%;
             margin-left: 5px;
         }
-        .clientes{
+
+        .clientes {
             width: 90%;
             margin-left: 5px;
-           
+
         }
-        .empresas{
+
+        .empresas {
             width: 90%;
             margin-left: 5px;
-            
+
         }
-        .proveedores{
+
+        .proveedores {
             width: 90%;
             margin-left: 5px;
         }
     }
 }
-@media only screen and (min-width:600px){
+
+@media only screen and (min-width:600px) {
     .contacto iframe {
         width: 65%;
         margin-left: 150px;
     }
-    .clientes{
+
+    .clientes {
         width: 70%;
         margin-left: 200px;
     }
-    .empresas{
+
+    .empresas {
         width: 70%;
         margin-left: 150px;
-        
+
     }
-    .proveedores{
+
+    .proveedores {
         width: 70%;
         margin-left: 150px;
     }
@@ -137,29 +265,36 @@
             "5";
         height: 2700px;
         justify-items: center;
+
         .div_nos p {
             font-size: 16px;
             margin-left: 10px;
         }
+
         .div_nos h2 {
             font-size: 20px;
         }
+
         .nosotros {
             grid-area: 1;
             width: 90%;
         }
+
         .mision {
             grid-area: 2;
             width: 90%;
         }
+
         .vision {
             grid-area: 3;
             width: 90%;
         }
+
         .consul {
             grid-area: 4;
             width: 90%;
         }
+
         .carrusel {
             grid-area: 5;
             width: 90%;
@@ -176,27 +311,31 @@
             "a2 a3"
             "a4 a4"
             "a5 a5";
-        height: 1250px;
+        height: 1300px;
         justify-items: center;
+
         .nosotros {
             grid-area: a1;
             width: 95%;
         }
+
         .mision {
             grid-area: a2;
             width: 95%;
         }
+
         .vision {
             grid-area: a3;
             width: 90%;
         }
+
         .consul {
             grid-area: a4;
             width: 95%;
         }
+
         .carrusel {
             grid-area: a5;
-            width: 30%;
         }
     }
 }
@@ -204,19 +343,33 @@
 /*--------------------------------SERVICIOS-----------------*/
 @media only screen and (max-width:600px) {
     .servcios_generales {
-        height: 1800px;}    
-    .servicios_1{
-        margin-left: 60px;}
-        .servicios_2{
-            margin-left: 60px;}
-            .servicios_3{
-                margin-left: 60px;}
-                .servicios_4{
-                    margin-left: 60px;}
-                    .servicios_5{
-                        margin-left: 60px;}
-                        .servicios_6{
-                            margin-left: 60px;}
+        height: 1800px;
+    }
+
+    .servicios_1 {
+        margin-left: 60px;
+    }
+
+    .servicios_2 {
+        margin-left: 60px;
+    }
+
+    .servicios_3 {
+        margin-left: 60px;
+    }
+
+    .servicios_4 {
+        margin-left: 60px;
+    }
+
+    .servicios_5 {
+        margin-left: 60px;
+    }
+
+    .servicios_6 {
+        margin-left: 60px;
+    }
+
     .main_h2 {
         text-align: center;
         font-weight: bold;
@@ -230,31 +383,37 @@
         text-align: center;
         font-weight: bold;
     }
+
     .servicios_generales {
         display: grid;
         grid-template-columns: 49% 49%;
         grid-template-rows: 33% 33% 33%;
         grid-template-areas: "a b"
-                             "c d"
-                            "e f";
+            "c d"
+            "e f";
         justify-items: center;
         height: 1000px;
-       
+
         .servicios_1 {
             grid-area: a;
         }
+
         .servicios_2 {
             grid-area: b;
         }
+
         .servicios_3 {
-            grid-area: c; 
+            grid-area: c;
         }
+
         .servicios_4 {
             grid-area: d;
         }
+
         .servicios_5 {
             grid-area: e;
         }
+
         .servicios_6 {
             grid-area: f;
         }
@@ -267,13 +426,15 @@
         width: 95%;
         margin-left: 10px;
         height: 1900px;
+
         .imagenes h3 {
             margin-top: 10px;
             width: 90%;
         }
-       
+
     }
 }
+
 @media only screen and (min-width:600px) {
     .imagenes {
         display: grid;
